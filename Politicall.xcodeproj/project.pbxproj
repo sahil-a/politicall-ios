@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		BA16BF351D83D002000967D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16BF341D83D002000967D0 /* AppDelegate.swift */; };
-		BA16BF371D83D002000967D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16BF361D83D002000967D0 /* ViewController.swift */; };
 		BA16BF3A1D83D003000967D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA16BF381D83D003000967D0 /* Main.storyboard */; };
 		BA16BF3C1D83D003000967D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA16BF3B1D83D003000967D0 /* Assets.xcassets */; };
 		BA16BF3F1D83D003000967D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA16BF3D1D83D003000967D0 /* LaunchScreen.storyboard */; };
+		BA16BF471D83D138000967D0 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16BF461D83D138000967D0 /* AuthenticationViewController.swift */; };
+		BA16BF491D83D154000967D0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16BF481D83D154000967D0 /* MainViewController.swift */; };
+		BA16BF4B1D83E6A0000967D0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16BF4A1D83E6A0000967D0 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA16BF311D83D002000967D0 /* Politicall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Politicall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA16BF341D83D002000967D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA16BF361D83D002000967D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA16BF391D83D003000967D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA16BF3B1D83D003000967D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA16BF3E1D83D003000967D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA16BF401D83D003000967D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA16BF461D83D138000967D0 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationViewController.swift; path = ../AuthenticationViewController.swift; sourceTree = "<group>"; };
+		BA16BF481D83D154000967D0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
+		BA16BF4A1D83E6A0000967D0 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				BA16BF341D83D002000967D0 /* AppDelegate.swift */,
-				BA16BF361D83D002000967D0 /* ViewController.swift */,
+				BA16BF461D83D138000967D0 /* AuthenticationViewController.swift */,
+				BA16BF481D83D154000967D0 /* MainViewController.swift */,
 				BA16BF381D83D003000967D0 /* Main.storyboard */,
+				BA16BF4A1D83E6A0000967D0 /* RoundedButton.swift */,
 				BA16BF3B1D83D003000967D0 /* Assets.xcassets */,
 				BA16BF3D1D83D003000967D0 /* LaunchScreen.storyboard */,
 				BA16BF401D83D003000967D0 /* Info.plist */,
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					BA16BF301D83D002000967D0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 98R2BUP44H;
 					};
 				};
 			};
@@ -135,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA16BF371D83D002000967D0 /* ViewController.swift in Sources */,
+				BA16BF491D83D154000967D0 /* MainViewController.swift in Sources */,
+				BA16BF471D83D138000967D0 /* AuthenticationViewController.swift in Sources */,
 				BA16BF351D83D002000967D0 /* AppDelegate.swift in Sources */,
+				BA16BF4B1D83E6A0000967D0 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +258,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Politicall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pennhacks.Politicall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +272,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Politicall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pennhacks.Politicall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
