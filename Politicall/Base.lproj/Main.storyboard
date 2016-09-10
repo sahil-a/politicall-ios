@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -31,24 +32,111 @@
                                     <constraint firstAttribute="width" secondItem="DMV-Vr-hjg" secondAttribute="height" multiplier="335:274" id="lG3-Pn-WDf"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSZ-4y-ygv" customClass="RoundedButton" customModule="Politicall" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="GN6-AX-0gX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBorderButton" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Login"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GN6-AX-0gX"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="GN6-AX-0gX"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mMB-Jn-jSF" customClass="RoundedButton" customModule="Politicall" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="wXD-gI-Kvm"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBorderButton" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Register"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="wXD-gI-Kvm"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="wXD-gI-Kvm"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="KSZ-4y-ygv" secondAttribute="trailing" constant="12" id="3gL-Bp-Bt7"/>
                             <constraint firstItem="DMV-Vr-hjg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DY1-0a-lPi"/>
+                            <constraint firstItem="KSZ-4y-ygv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NAQ-Yy-cEV"/>
                             <constraint firstItem="DMV-Vr-hjg" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="274:667" id="V3F-99-C7i"/>
+                            <constraint firstItem="mMB-Jn-jSF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="ebq-6e-LHg">
+                                <variation key="heightClass=regular-widthClass=compact" constant="12"/>
+                            </constraint>
                             <constraint firstItem="dqq-Zp-5Fw" firstAttribute="top" secondItem="wfy-db-euE" secondAttribute="top" multiplier="103/667" id="glF-Fk-u3h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mMB-Jn-jSF" secondAttribute="trailing" constant="19" id="i5g-e2-95f">
+                                <variation key="heightClass=regular-widthClass=compact" constant="12"/>
+                            </constraint>
+                            <constraint firstItem="KSZ-4y-ygv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="l7n-1U-vOo"/>
+                            <constraint firstItem="mMB-Jn-jSF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="naz-ga-zsH"/>
+                            <constraint firstItem="mMB-Jn-jSF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="stF-zZ-bp8"/>
+                            <constraint firstItem="mMB-Jn-jSF" firstAttribute="top" secondItem="KSZ-4y-ygv" secondAttribute="bottom" constant="10" id="tsu-Wg-pPu"/>
                             <constraint firstItem="dqq-Zp-5Fw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="47:667" id="x8J-G6-Qtw"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DMV-Vr-hjg" secondAttribute="bottom" id="zYJ-jy-8Kb"/>
                             <constraint firstItem="dqq-Zp-5Fw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zaz-xM-MCS"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="KSZ-4y-ygv"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3gL-Bp-Bt7"/>
+                                <exclude reference="NAQ-Yy-cEV"/>
+                                <exclude reference="l7n-1U-vOo"/>
+                                <exclude reference="ebq-6e-LHg"/>
+                                <exclude reference="i5g-e2-95f"/>
+                                <exclude reference="naz-ga-zsH"/>
+                                <exclude reference="stF-zZ-bp8"/>
+                                <exclude reference="tsu-Wg-pPu"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="KSZ-4y-ygv"/>
+                                <include reference="mMB-Jn-jSF"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3gL-Bp-Bt7"/>
+                                <include reference="NAQ-Yy-cEV"/>
+                                <include reference="l7n-1U-vOo"/>
+                                <include reference="ebq-6e-LHg"/>
+                                <include reference="i5g-e2-95f"/>
+                                <include reference="naz-ga-zsH"/>
+                                <include reference="stF-zZ-bp8"/>
+                                <include reference="tsu-Wg-pPu"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="KSZ-4y-ygv" id="4Lw-I0-25P"/>
+                        <outlet property="registerButton" destination="mMB-Jn-jSF" id="rW7-Dz-ckP"/>
                         <segue destination="pnu-bs-U05" kind="presentation" identifier="logged" animates="NO" id="1Ms-BV-KFb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="375" y="335"/>
+            <point key="canvasLocation" x="375" y="334.5"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="hSx-wM-hab">

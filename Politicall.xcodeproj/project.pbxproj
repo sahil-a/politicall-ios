@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EBC9E75D3991B9B449ACF87 /* Pods_Politicall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B4D90688E8867865191386 /* Pods_Politicall.framework */; };
 		BA16BF351D83D002000967D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16BF341D83D002000967D0 /* AppDelegate.swift */; };
 		BA16BF3A1D83D003000967D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA16BF381D83D003000967D0 /* Main.storyboard */; };
 		BA16BF3C1D83D003000967D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA16BF3B1D83D003000967D0 /* Assets.xcassets */; };
@@ -14,9 +15,14 @@
 		BA16BF471D83D138000967D0 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16BF461D83D138000967D0 /* AuthenticationViewController.swift */; };
 		BA16BF491D83D154000967D0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16BF481D83D154000967D0 /* MainViewController.swift */; };
 		BA16BF4B1D83E6A0000967D0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16BF4A1D83E6A0000967D0 /* RoundedButton.swift */; };
+		BA16BF4D1D844B1F000967D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA16BF4C1D844B1F000967D0 /* GoogleService-Info.plist */; };
+		BA16BF521D845357000967D0 /* PoliticallService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16BF511D845357000967D0 /* PoliticallService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60B4D90688E8867865191386 /* Pods_Politicall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Politicall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89098BCCFAB238EF6571BF43 /* Pods-Politicall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Politicall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Politicall/Pods-Politicall.debug.xcconfig"; sourceTree = "<group>"; };
+		B6CDAC376950C0E5642A4B1A /* Pods-Politicall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Politicall.release.xcconfig"; path = "Pods/Target Support Files/Pods-Politicall/Pods-Politicall.release.xcconfig"; sourceTree = "<group>"; };
 		BA16BF311D83D002000967D0 /* Politicall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Politicall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA16BF341D83D002000967D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA16BF391D83D003000967D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +32,9 @@
 		BA16BF461D83D138000967D0 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationViewController.swift; path = ../AuthenticationViewController.swift; sourceTree = "<group>"; };
 		BA16BF481D83D154000967D0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
 		BA16BF4A1D83E6A0000967D0 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		BA16BF4C1D844B1F000967D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BA16BF4E1D844BFB000967D0 /* Politicall-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Politicall-Bridging-Header.h"; sourceTree = "<group>"; };
+		BA16BF511D845357000967D0 /* PoliticallService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticallService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EBC9E75D3991B9B449ACF87 /* Pods_Politicall.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +54,9 @@
 			children = (
 				BA16BF331D83D002000967D0 /* Politicall */,
 				BA16BF321D83D002000967D0 /* Products */,
+				E4FDC4AC8F024347D659534D /* Pods */,
+				BC51FDC5AB5FF840F4A04DD1 /* Frameworks */,
+				BA16BF4E1D844BFB000967D0 /* Politicall-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +71,9 @@
 		BA16BF331D83D002000967D0 /* Politicall */ = {
 			isa = PBXGroup;
 			children = (
+				BA16BF4C1D844B1F000967D0 /* GoogleService-Info.plist */,
 				BA16BF341D83D002000967D0 /* AppDelegate.swift */,
+				BA16BF511D845357000967D0 /* PoliticallService.swift */,
 				BA16BF461D83D138000967D0 /* AuthenticationViewController.swift */,
 				BA16BF481D83D154000967D0 /* MainViewController.swift */,
 				BA16BF381D83D003000967D0 /* Main.storyboard */,
@@ -70,6 +85,23 @@
 			path = Politicall;
 			sourceTree = "<group>";
 		};
+		BC51FDC5AB5FF840F4A04DD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60B4D90688E8867865191386 /* Pods_Politicall.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4FDC4AC8F024347D659534D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89098BCCFAB238EF6571BF43 /* Pods-Politicall.debug.xcconfig */,
+				B6CDAC376950C0E5642A4B1A /* Pods-Politicall.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA16BF431D83D003000967D0 /* Build configuration list for PBXNativeTarget "Politicall" */;
 			buildPhases = (
+				2E6B4DC23FBDA4C810B7BECD /* [CP] Check Pods Manifest.lock */,
 				BA16BF2D1D83D002000967D0 /* Sources */,
 				BA16BF2E1D83D002000967D0 /* Frameworks */,
 				BA16BF2F1D83D002000967D0 /* Resources */,
+				BF7C3AAD69C8893FF991A949 /* [CP] Embed Pods Frameworks */,
+				6A5CF320FDEC03FE4B30505C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA16BF3F1D83D003000967D0 /* LaunchScreen.storyboard in Resources */,
+				BA16BF4D1D844B1F000967D0 /* GoogleService-Info.plist in Resources */,
 				BA16BF3C1D83D003000967D0 /* Assets.xcassets in Resources */,
 				BA16BF3A1D83D003000967D0 /* Main.storyboard in Resources */,
 			);
@@ -137,11 +173,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E6B4DC23FBDA4C810B7BECD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6A5CF320FDEC03FE4B30505C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Politicall/Pods-Politicall-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF7C3AAD69C8893FF991A949 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Politicall/Pods-Politicall-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA16BF2D1D83D002000967D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA16BF521D845357000967D0 /* PoliticallService.swift in Sources */,
 				BA16BF491D83D154000967D0 /* MainViewController.swift in Sources */,
 				BA16BF471D83D138000967D0 /* AuthenticationViewController.swift in Sources */,
 				BA16BF351D83D002000967D0 /* AppDelegate.swift in Sources */,
@@ -256,8 +341,10 @@
 		};
 		BA16BF441D83D003000967D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89098BCCFAB238EF6571BF43 /* Pods-Politicall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Politicall/Info.plist;
@@ -265,13 +352,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pennhacks.Politicall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Politicall-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		BA16BF451D83D003000967D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6CDAC376950C0E5642A4B1A /* Pods-Politicall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Politicall/Info.plist;
@@ -279,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pennhacks.Politicall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Politicall-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -301,6 +393,7 @@
 				BA16BF451D83D003000967D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
