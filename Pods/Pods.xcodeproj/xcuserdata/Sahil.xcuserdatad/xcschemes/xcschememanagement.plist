@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MaterialControls-MaterialControls.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MaterialControls.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Politicall.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>35BE2C57761A4F7C56157A08242645EC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>720EA7C4B6AC4D960C9A08E2261B6B22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7BBD3DF3BBFE8C817B7647222F78361C</key>
+		<key>F196FBB39FBF9819A151025164AF4072</key>
 		<dict>
 			<key>primary</key>
 			<true/>

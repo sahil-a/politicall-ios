@@ -17,6 +17,7 @@
 		BA16BF4B1D83E6A0000967D0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16BF4A1D83E6A0000967D0 /* RoundedButton.swift */; };
 		BA16BF4D1D844B1F000967D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA16BF4C1D844B1F000967D0 /* GoogleService-Info.plist */; };
 		BA16BF521D845357000967D0 /* PoliticallService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16BF511D845357000967D0 /* PoliticallService.swift */; };
+		BA16BF541D84A388000967D0 /* TutorialPaginationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16BF531D84A388000967D0 /* TutorialPaginationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		BA16BF4C1D844B1F000967D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BA16BF4E1D844BFB000967D0 /* Politicall-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Politicall-Bridging-Header.h"; sourceTree = "<group>"; };
 		BA16BF511D845357000967D0 /* PoliticallService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticallService.swift; sourceTree = "<group>"; };
+		BA16BF531D84A388000967D0 /* TutorialPaginationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPaginationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				BA16BF461D83D138000967D0 /* AuthenticationViewController.swift */,
 				BA16BF481D83D154000967D0 /* MainViewController.swift */,
 				BA16BF381D83D003000967D0 /* Main.storyboard */,
+				BA16BF531D84A388000967D0 /* TutorialPaginationViewController.swift */,
 				BA16BF4A1D83E6A0000967D0 /* RoundedButton.swift */,
 				BA16BF3B1D83D003000967D0 /* Assets.xcassets */,
 				BA16BF3D1D83D003000967D0 /* LaunchScreen.storyboard */,
@@ -226,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA16BF541D84A388000967D0 /* TutorialPaginationViewController.swift in Sources */,
 				BA16BF521D845357000967D0 /* PoliticallService.swift in Sources */,
 				BA16BF491D83D154000967D0 /* MainViewController.swift in Sources */,
 				BA16BF471D83D138000967D0 /* AuthenticationViewController.swift in Sources */,

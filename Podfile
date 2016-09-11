@@ -8,6 +8,8 @@ target 'Politicall' do
   # Pods for Politicall
 pod 'Google/SignIn'
 pod 'Alamofire'
+pod 'MaterialControls', '~> 1.1.0'
+
 
 
 end
