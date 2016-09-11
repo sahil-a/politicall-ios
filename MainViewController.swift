@@ -23,6 +23,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     var leaderboard: [LeaderboardPerson] = []
     var switches = [MDSwitch]()
     @IBOutlet weak var leaderboardTableView: UITableView!
+    @IBOutlet weak var bottomView: UIView!
+    
     var formActive: Bool = false {
         didSet {
             formView.hidden = !formActive
@@ -42,6 +44,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                 print("Failed to get leaderboard")
             }
         }
+        bottomView.layer.shadowColor = UIColor.blackColor().CGColor
+        bottomView.layer.shadowOffset = CGSizeZero
+        bottomView.layer.shadowRadius = 4
+        bottomView.layer.shadowOpacity = 0.35
     }
     
     func updateLabels() {

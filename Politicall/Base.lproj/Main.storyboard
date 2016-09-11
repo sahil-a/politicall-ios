@@ -597,6 +597,7 @@
                     </view>
                     <connections>
                         <outlet property="averageDurationLabel" destination="tGu-EJ-R4x" id="vZy-Xq-QeM"/>
+                        <outlet property="bottomView" destination="t5g-Nf-2sN" id="fii-sB-tln"/>
                         <outlet property="callsLabel" destination="slO-5o-mVK" id="GEP-Yv-Nhm"/>
                         <outlet property="cancelView" destination="rFh-Ab-WKf" id="YOD-rd-lxv"/>
                         <outlet property="formView" destination="x5x-TZ-AFL" id="HRr-VK-THu"/>

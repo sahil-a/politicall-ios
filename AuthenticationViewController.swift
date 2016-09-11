@@ -17,35 +17,37 @@ class AuthenticationViewController: UIViewController, GIDSignInUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDSignIn.sharedInstance().uiDelegate = self
-        // Do any additional setup after loading the view.
-        authenticateWithSignInHandler(silently: true) { (completion, userID, name, email) in
-            if completion {
-                PoliticallService.sharedService.login(userID, completionHandler: { (success) in
-                    if success {
-                        PoliticallService.sharedService.callDataForUserID(userID, completionHandler: { (success, pickedUp, dropped, total) in
-                            if success {
-                                // logged in silently
-                                PoliticallService.sharedService.getAverageCallDurationForUser(userID, completion: { (success, seconds) in
-                                    if success {
-                                        self.userData = UserData(totalCalls: total, pickedCalls: pickedUp, droppedCalls: dropped, userID: userID, averageCallDuration: seconds)
-                                        self.performSegueWithIdentifier("logged", sender: self)
-                                    } else {
-                                        print("Failed to login")
-                                    }
-                                })
-                            } else {
-                                fatalError()
-                            }
-                        })
-                    } else {
-                        print("Failed to login")
-                        
-                    }
-                })
-            } else {
-                print("Failed to login silently")
-            }
-        }
+        // UNCOMMENT FOR AUTO LOGIN
+        
+        
+        //        authenticateWithSignInHandler(silently: true) { (completion, userID, name, email) in
+        //            if completion {
+        //                PoliticallService.sharedService.login(userID, completionHandler: { (success) in
+        //                    if success {
+        //                        PoliticallService.sharedService.callDataForUserID(userID, completionHandler: { (success, pickedUp, dropped, total) in
+        //                            if success {
+        //                                // logged in silently
+        //                                PoliticallService.sharedService.getAverageCallDurationForUser(userID, completion: { (success, seconds) in
+        //                                    if success {
+        //                                        self.userData = UserData(totalCalls: total, pickedCalls: pickedUp, droppedCalls: dropped, userID: userID, averageCallDuration: seconds)
+        //                                        self.performSegueWithIdentifier("logged", sender: self)
+        //                                    } else {
+        //                                        print("Failed to login")
+        //                                    }
+        //                                })
+        //                            } else {
+        //                                fatalError()
+        //                            }
+        //                        })
+        //                    } else {
+        //                        print("Failed to login")
+        //                        
+        //                    }
+        //                })
+        //            } else {
+        //                print("Failed to login silently")
+        //            }
+        //        }
     }
     
     override func didReceiveMemoryWarning() {
