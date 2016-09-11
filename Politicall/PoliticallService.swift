@@ -106,7 +106,24 @@ public class PoliticallService {
             }
         }
     }
-    
+    // array of dicts of name and count(*), /api/leaderboard
+    func getLeaderboard(completionHandler: (success: Bool, leaderboard: [LeaderboardPerson]!) -> Void) {
+        let endpoint = "/api/leaderboard"
+        let url = serverIP + endpoint
+        
+        Alamofire.request(.GET, url).responseJSON { response in
+            if let value = response.result.value as? [[String: AnyObject]] {
+                let leaderboard: [LeaderboardPerson] = value.map { dict in
+                    let name = dict["name"] as! String
+                    let value = Int(dict["count(*)"] as! String)!
+                    return LeaderboardPerson(name: name, value: value)
+                }
+                completionHandler(success: true, leaderboard: leaderboard)
+            } else {
+                completionHandler(success: false, leaderboard: nil)
+            }
+        }
+    }
 }
 
 enum Opinion: String {

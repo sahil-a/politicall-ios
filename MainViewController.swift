@@ -9,7 +9,7 @@
 import UIKit
 import MaterialControls
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var userData: UserData! // set before segue
     @IBOutlet weak var phoneView: UIImageView!
@@ -20,7 +20,9 @@ class MainViewController: UIViewController {
     @IBOutlet weak var formView: UIView!
     @IBOutlet weak var cancelView: UIImageView!
     var nameTextField: MDTextField!
+    var leaderboard: [LeaderboardPerson] = []
     var switches = [MDSwitch]()
+    @IBOutlet weak var leaderboardTableView: UITableView!
     var formActive: Bool = false {
         didSet {
             formView.hidden = !formActive
@@ -32,6 +34,14 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         updateLabels()
+        PoliticallService.sharedService.getLeaderboard { (success, leaderboard) in
+            if success {
+                self.leaderboard = leaderboard
+                self.leaderboardTableView.reloadData()
+            } else {
+                print("Failed to get leaderboard")
+            }
+        }
     }
     
     func updateLabels() {
@@ -212,8 +222,26 @@ class MainViewController: UIViewController {
         view.endEditing(true)
     }
     
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
     
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return leaderboard.count
+    }
     
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell")! as! LeaderboardCell
+        let person = leaderboard[indexPath.row]
+        cell.nameLabel.text = "\(indexPath.row + 1). \(person.name)"
+        cell.valueLabel.text = "\(person.value)"
+        return cell
+    }
+}
+
+struct LeaderboardPerson {
+    var name: String
+    var value: Int
 }
 
 struct UserData {

@@ -18,6 +18,7 @@
 		BA16BF4D1D844B1F000967D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA16BF4C1D844B1F000967D0 /* GoogleService-Info.plist */; };
 		BA16BF521D845357000967D0 /* PoliticallService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16BF511D845357000967D0 /* PoliticallService.swift */; };
 		BA16BF541D84A388000967D0 /* TutorialPaginationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16BF531D84A388000967D0 /* TutorialPaginationViewController.swift */; };
+		BA7A41B01D85137900C13F20 /* LeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7A41AF1D85137900C13F20 /* LeaderboardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		BA16BF4E1D844BFB000967D0 /* Politicall-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Politicall-Bridging-Header.h"; sourceTree = "<group>"; };
 		BA16BF511D845357000967D0 /* PoliticallService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticallService.swift; sourceTree = "<group>"; };
 		BA16BF531D84A388000967D0 /* TutorialPaginationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPaginationViewController.swift; sourceTree = "<group>"; };
+		BA7A41AF1D85137900C13F20 /* LeaderboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeaderboardCell.swift; path = ../LeaderboardCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				BA16BF4C1D844B1F000967D0 /* GoogleService-Info.plist */,
 				BA16BF341D83D002000967D0 /* AppDelegate.swift */,
 				BA16BF511D845357000967D0 /* PoliticallService.swift */,
+				BA7A41AF1D85137900C13F20 /* LeaderboardCell.swift */,
 				BA16BF461D83D138000967D0 /* AuthenticationViewController.swift */,
 				BA16BF481D83D154000967D0 /* MainViewController.swift */,
 				BA16BF381D83D003000967D0 /* Main.storyboard */,
@@ -234,6 +237,7 @@
 				BA16BF491D83D154000967D0 /* MainViewController.swift in Sources */,
 				BA16BF471D83D138000967D0 /* AuthenticationViewController.swift in Sources */,
 				BA16BF351D83D002000967D0 /* AppDelegate.swift in Sources */,
+				BA7A41B01D85137900C13F20 /* LeaderboardCell.swift in Sources */,
 				BA16BF4B1D83E6A0000967D0 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
