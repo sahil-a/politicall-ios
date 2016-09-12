@@ -286,53 +286,6 @@
                                 <color key="textColor" red="0.53403750734038891" green="0.16056423049175289" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x5x-TZ-AFL">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="rFh-Ab-WKf">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="22" id="EJI-73-UE2"/>
-                                            <constraint firstAttribute="width" constant="22" id="bEY-hh-bCN"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="EJI-73-UE2"/>
-                                                <exclude reference="bEY-hh-bCN"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="EJI-73-UE2"/>
-                                                <include reference="bEY-hh-bCN"/>
-                                            </mask>
-                                        </variation>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="rFh-Ab-WKf" firstAttribute="top" secondItem="x5x-TZ-AFL" secondAttribute="top" constant="25" id="89Z-gC-6Yb"/>
-                                    <constraint firstAttribute="trailing" secondItem="rFh-Ab-WKf" secondAttribute="trailing" constant="25" id="ZQ6-rS-hpK"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="rFh-Ab-WKf"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <exclude reference="89Z-gC-6Yb"/>
-                                        <exclude reference="ZQ6-rS-hpK"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="subviews">
-                                        <include reference="rFh-Ab-WKf"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <include reference="89Z-gC-6Yb"/>
-                                        <include reference="ZQ6-rS-hpK"/>
-                                    </mask>
-                                </variation>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t5g-Nf-2sN">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
@@ -464,6 +417,53 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x5x-TZ-AFL">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="rFh-Ab-WKf">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="EJI-73-UE2"/>
+                                            <constraint firstAttribute="width" constant="22" id="bEY-hh-bCN"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="EJI-73-UE2"/>
+                                                <exclude reference="bEY-hh-bCN"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="EJI-73-UE2"/>
+                                                <include reference="bEY-hh-bCN"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="rFh-Ab-WKf" firstAttribute="top" secondItem="x5x-TZ-AFL" secondAttribute="top" constant="25" id="89Z-gC-6Yb"/>
+                                    <constraint firstAttribute="trailing" secondItem="rFh-Ab-WKf" secondAttribute="trailing" constant="25" id="ZQ6-rS-hpK"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="rFh-Ab-WKf"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="89Z-gC-6Yb"/>
+                                        <exclude reference="ZQ6-rS-hpK"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="rFh-Ab-WKf"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="89Z-gC-6Yb"/>
+                                        <include reference="ZQ6-rS-hpK"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.12549019607843137" green="0.44705882352941179" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -559,8 +559,8 @@
                                 <include reference="fl8-nV-LaQ"/>
                                 <include reference="tGu-EJ-R4x"/>
                                 <include reference="8QX-FD-XkM"/>
-                                <exclude reference="x5x-TZ-AFL"/>
                                 <include reference="t5g-Nf-2sN"/>
+                                <include reference="x5x-TZ-AFL"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="MOi-AG-tvA"/>
